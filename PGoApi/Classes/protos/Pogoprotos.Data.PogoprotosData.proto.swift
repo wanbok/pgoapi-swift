@@ -598,7 +598,7 @@ public extension Pogoprotos.Data {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Data.AssetDigestEntry.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Data.AssetDigestEntry.Builder {
         let resultDecodedBuilder = Pogoprotos.Data.AssetDigestEntry.Builder()
         if let jsonValueAssetId = jsonMap["assetId"] as? String {
           resultDecodedBuilder.assetId = jsonValueAssetId
@@ -905,7 +905,7 @@ public extension Pogoprotos.Data {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Data.BackgroundToken.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Data.BackgroundToken.Builder {
         let resultDecodedBuilder = Pogoprotos.Data.BackgroundToken.Builder()
         if let jsonValueToken = jsonMap["token"] as? String {
           resultDecodedBuilder.token = Data(base64Encoded:jsonValueToken, options: Data.Base64DecodingOptions(rawValue:0))!
@@ -1203,7 +1203,7 @@ public extension Pogoprotos.Data {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Data.BuddyPokemon.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Data.BuddyPokemon.Builder {
         let resultDecodedBuilder = Pogoprotos.Data.BuddyPokemon.Builder()
         if let jsonValueId = jsonMap["id"] as? String {
           resultDecodedBuilder.id = UInt64(jsonValueId)!
@@ -1407,7 +1407,7 @@ public extension Pogoprotos.Data {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Data.ClientVersion.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Data.ClientVersion.Builder {
         let resultDecodedBuilder = Pogoprotos.Data.ClientVersion.Builder()
         if let jsonValueMinVersion = jsonMap["minVersion"] as? String {
           resultDecodedBuilder.minVersion = jsonValueMinVersion
@@ -1746,7 +1746,7 @@ public extension Pogoprotos.Data {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Data.DownloadUrlEntry.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Data.DownloadUrlEntry.Builder {
         let resultDecodedBuilder = Pogoprotos.Data.DownloadUrlEntry.Builder()
         if let jsonValueAssetId = jsonMap["assetId"] as? String {
           resultDecodedBuilder.assetId = jsonValueAssetId
@@ -2145,7 +2145,7 @@ public extension Pogoprotos.Data {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Data.PlayerBadge.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Data.PlayerBadge.Builder {
         let resultDecodedBuilder = Pogoprotos.Data.PlayerBadge.Builder()
         if let jsonValueBadgeType = jsonMap["badgeType"] as? String {
           resultDecodedBuilder.badgeType = try Pogoprotos.Enums.BadgeType.fromString(str: jsonValueBadgeType)
@@ -3191,7 +3191,7 @@ public extension Pogoprotos.Data {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Data.PlayerData.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Data.PlayerData.Builder {
         let resultDecodedBuilder = Pogoprotos.Data.PlayerData.Builder()
         if let jsonValueCreationTimestampMs = jsonMap["creationTimestampMs"] as? String {
           resultDecodedBuilder.creationTimestampMs = Int64(jsonValueCreationTimestampMs)!
@@ -3636,7 +3636,7 @@ public extension Pogoprotos.Data {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Data.PokedexEntry.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Data.PokedexEntry.Builder {
         let resultDecodedBuilder = Pogoprotos.Data.PokedexEntry.Builder()
         if let jsonValuePokemonId = jsonMap["pokemonId"] as? String {
           resultDecodedBuilder.pokemonId = try Pogoprotos.Enums.PokemonId.fromString(str: jsonValuePokemonId)
@@ -5413,7 +5413,7 @@ public extension Pogoprotos.Data {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Data.PokemonData.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Data.PokemonData.Builder {
         let resultDecodedBuilder = Pogoprotos.Data.PokemonData.Builder()
         if let jsonValueId = jsonMap["id"] as? String {
           resultDecodedBuilder.id = UInt64(jsonValueId)!

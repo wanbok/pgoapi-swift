@@ -667,7 +667,7 @@ public extension Pogoprotos.Data.Logs {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Data.Logs.ActionLogEntry.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Data.Logs.ActionLogEntry.Builder {
         let resultDecodedBuilder = Pogoprotos.Data.Logs.ActionLogEntry.Builder()
         if let jsonValueTimestampMs = jsonMap["timestampMs"] as? String {
           resultDecodedBuilder.timestampMs = Int64(jsonValueTimestampMs)!
@@ -1014,7 +1014,7 @@ public extension Pogoprotos.Data.Logs {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Data.Logs.BuddyPokemonLogEntry.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Data.Logs.BuddyPokemonLogEntry.Builder {
         let resultDecodedBuilder = Pogoprotos.Data.Logs.BuddyPokemonLogEntry.Builder()
         if let jsonValueResult = jsonMap["result"] as? String {
           resultDecodedBuilder.result = try Pogoprotos.Data.Logs.BuddyPokemonLogEntry.Result.fromString(str: jsonValueResult)
@@ -1407,7 +1407,7 @@ public extension Pogoprotos.Data.Logs {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Data.Logs.CatchPokemonLogEntry.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Data.Logs.CatchPokemonLogEntry.Builder {
         let resultDecodedBuilder = Pogoprotos.Data.Logs.CatchPokemonLogEntry.Builder()
         if let jsonValueResult = jsonMap["result"] as? String {
           resultDecodedBuilder.result = try Pogoprotos.Data.Logs.CatchPokemonLogEntry.Result.fromString(str: jsonValueResult)
@@ -1793,7 +1793,7 @@ public extension Pogoprotos.Data.Logs {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Data.Logs.FortSearchLogEntry.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Data.Logs.FortSearchLogEntry.Builder {
         let resultDecodedBuilder = Pogoprotos.Data.Logs.FortSearchLogEntry.Builder()
         if let jsonValueResult = jsonMap["result"] as? String {
           resultDecodedBuilder.result = try Pogoprotos.Data.Logs.FortSearchLogEntry.Result.fromString(str: jsonValueResult)

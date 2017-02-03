@@ -1119,7 +1119,7 @@ public extension Pogoprotos.Data.Battle {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Data.Battle.BattleAction.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Data.Battle.BattleAction.Builder {
         let resultDecodedBuilder = Pogoprotos.Data.Battle.BattleAction.Builder()
         if let jsonValueType = jsonMap["type"] as? String {
           resultDecodedBuilder.type = try Pogoprotos.Data.Battle.BattleActionType.fromString(str: jsonValueType)
@@ -1601,7 +1601,7 @@ public extension Pogoprotos.Data.Battle {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Data.Battle.BattleLog.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Data.Battle.BattleLog.Builder {
         let resultDecodedBuilder = Pogoprotos.Data.Battle.BattleLog.Builder()
         if let jsonValueState = jsonMap["state"] as? String {
           resultDecodedBuilder.state = try Pogoprotos.Data.Battle.BattleState.fromString(str: jsonValueState)
@@ -2045,7 +2045,7 @@ public extension Pogoprotos.Data.Battle {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Data.Battle.BattleParticipant.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Data.Battle.BattleParticipant.Builder {
         let resultDecodedBuilder = Pogoprotos.Data.Battle.BattleParticipant.Builder()
         if let jsonValueActivePokemon = jsonMap["activePokemon"] as? Dictionary<String,Any> {
           resultDecodedBuilder.activePokemon = try Pogoprotos.Data.Battle.BattlePokemonInfo.Builder.decodeToBuilder(jsonMap:jsonValueActivePokemon).build()
@@ -2400,7 +2400,7 @@ public extension Pogoprotos.Data.Battle {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Data.Battle.BattlePokemonInfo.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Data.Battle.BattlePokemonInfo.Builder {
         let resultDecodedBuilder = Pogoprotos.Data.Battle.BattlePokemonInfo.Builder()
         if let jsonValuePokemonData = jsonMap["pokemonData"] as? Dictionary<String,Any> {
           resultDecodedBuilder.pokemonData = try Pogoprotos.Data.PokemonData.Builder.decodeToBuilder(jsonMap:jsonValuePokemonData).build()
@@ -2849,7 +2849,7 @@ public extension Pogoprotos.Data.Battle {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Data.Battle.BattleResults.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Data.Battle.BattleResults.Builder {
         let resultDecodedBuilder = Pogoprotos.Data.Battle.BattleResults.Builder()
         if let jsonValueGymState = jsonMap["gymState"] as? Dictionary<String,Any> {
           resultDecodedBuilder.gymState = try Pogoprotos.Data.Gym.GymState.Builder.decodeToBuilder(jsonMap:jsonValueGymState).build()

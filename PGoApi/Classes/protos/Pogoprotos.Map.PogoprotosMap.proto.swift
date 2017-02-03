@@ -756,7 +756,7 @@ public extension Pogoprotos.Map {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Map.MapCell.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Map.MapCell.Builder {
         let resultDecodedBuilder = Pogoprotos.Map.MapCell.Builder()
         if let jsonValueS2CellId = jsonMap["s2CellId"] as? String {
           resultDecodedBuilder.s2CellId = UInt64(jsonValueS2CellId)!
@@ -1073,7 +1073,7 @@ public extension Pogoprotos.Map {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Map.SpawnPoint.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Map.SpawnPoint.Builder {
         let resultDecodedBuilder = Pogoprotos.Map.SpawnPoint.Builder()
         if let jsonValueLatitude = jsonMap["latitude"] as? NSNumber {
           resultDecodedBuilder.latitude = jsonValueLatitude.doubleValue

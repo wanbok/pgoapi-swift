@@ -438,7 +438,7 @@ public extension Pogoprotos.Settings.Master.Pokemon {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Settings.Master.Pokemon.CameraAttributes.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Settings.Master.Pokemon.CameraAttributes.Builder {
         let resultDecodedBuilder = Pogoprotos.Settings.Master.Pokemon.CameraAttributes.Builder()
         if let jsonValueDiskRadiusM = jsonMap["diskRadiusM"] as? NSNumber {
           resultDecodedBuilder.diskRadiusM = jsonValueDiskRadiusM.floatValue
@@ -1028,7 +1028,7 @@ public extension Pogoprotos.Settings.Master.Pokemon {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Settings.Master.Pokemon.EncounterAttributes.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Settings.Master.Pokemon.EncounterAttributes.Builder {
         let resultDecodedBuilder = Pogoprotos.Settings.Master.Pokemon.EncounterAttributes.Builder()
         if let jsonValueBaseCaptureRate = jsonMap["baseCaptureRate"] as? NSNumber {
           resultDecodedBuilder.baseCaptureRate = jsonValueBaseCaptureRate.floatValue
@@ -1391,7 +1391,7 @@ public extension Pogoprotos.Settings.Master.Pokemon {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Settings.Master.Pokemon.StatsAttributes.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Settings.Master.Pokemon.StatsAttributes.Builder {
         let resultDecodedBuilder = Pogoprotos.Settings.Master.Pokemon.StatsAttributes.Builder()
         if let jsonValueBaseStamina = jsonMap["baseStamina"] as? NSNumber {
           resultDecodedBuilder.baseStamina = jsonValueBaseStamina.int32Value

@@ -1204,7 +1204,7 @@ public extension Pogoprotos.Map.Fort {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Map.Fort.FortData.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Map.Fort.FortData.Builder {
         let resultDecodedBuilder = Pogoprotos.Map.Fort.FortData.Builder()
         if let jsonValueId = jsonMap["id"] as? String {
           resultDecodedBuilder.id = jsonValueId
@@ -1601,7 +1601,7 @@ public extension Pogoprotos.Map.Fort {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Map.Fort.FortLureInfo.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Map.Fort.FortLureInfo.Builder {
         let resultDecodedBuilder = Pogoprotos.Map.Fort.FortLureInfo.Builder()
         if let jsonValueFortId = jsonMap["fortId"] as? String {
           resultDecodedBuilder.fortId = jsonValueFortId
@@ -1906,7 +1906,7 @@ public extension Pogoprotos.Map.Fort {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Map.Fort.FortModifier.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Map.Fort.FortModifier.Builder {
         let resultDecodedBuilder = Pogoprotos.Map.Fort.FortModifier.Builder()
         if let jsonValueItemId = jsonMap["itemId"] as? String {
           resultDecodedBuilder.itemId = try Pogoprotos.Inventory.Item.ItemId.fromString(str: jsonValueItemId)
@@ -2251,7 +2251,7 @@ public extension Pogoprotos.Map.Fort {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Map.Fort.FortSummary.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Map.Fort.FortSummary.Builder {
         let resultDecodedBuilder = Pogoprotos.Map.Fort.FortSummary.Builder()
         if let jsonValueFortSummaryId = jsonMap["fortSummaryId"] as? String {
           resultDecodedBuilder.fortSummaryId = jsonValueFortSummaryId

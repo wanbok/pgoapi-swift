@@ -323,7 +323,7 @@ public extension Pogoprotos.Settings.Master.Item {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Settings.Master.Item.BattleAttributes.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Settings.Master.Item.BattleAttributes.Builder {
         let resultDecodedBuilder = Pogoprotos.Settings.Master.Item.BattleAttributes.Builder()
         if let jsonValueStaPercent = jsonMap["staPercent"] as? NSNumber {
           resultDecodedBuilder.staPercent = jsonValueStaPercent.floatValue
@@ -619,7 +619,7 @@ public extension Pogoprotos.Settings.Master.Item {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Settings.Master.Item.EggIncubatorAttributes.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Settings.Master.Item.EggIncubatorAttributes.Builder {
         let resultDecodedBuilder = Pogoprotos.Settings.Master.Item.EggIncubatorAttributes.Builder()
         if let jsonValueIncubatorType = jsonMap["incubatorType"] as? String {
           resultDecodedBuilder.incubatorType = try Pogoprotos.Inventory.EggIncubatorType.fromString(str: jsonValueIncubatorType)
@@ -870,7 +870,7 @@ public extension Pogoprotos.Settings.Master.Item {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Settings.Master.Item.ExperienceBoostAttributes.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Settings.Master.Item.ExperienceBoostAttributes.Builder {
         let resultDecodedBuilder = Pogoprotos.Settings.Master.Item.ExperienceBoostAttributes.Builder()
         if let jsonValueXpMultiplier = jsonMap["xpMultiplier"] as? NSNumber {
           resultDecodedBuilder.xpMultiplier = jsonValueXpMultiplier.floatValue
@@ -1183,7 +1183,7 @@ public extension Pogoprotos.Settings.Master.Item {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Settings.Master.Item.FoodAttributes.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Settings.Master.Item.FoodAttributes.Builder {
         let resultDecodedBuilder = Pogoprotos.Settings.Master.Item.FoodAttributes.Builder()
         if let jsonValueItemEffect = jsonMap["itemEffect"] as? Array<String> {
           var jsonArrayItemEffect:Array<Pogoprotos.Enums.ItemEffect> = []
@@ -1443,7 +1443,7 @@ public extension Pogoprotos.Settings.Master.Item {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Settings.Master.Item.FortModifierAttributes.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Settings.Master.Item.FortModifierAttributes.Builder {
         let resultDecodedBuilder = Pogoprotos.Settings.Master.Item.FortModifierAttributes.Builder()
         if let jsonValueModifierLifetimeSeconds = jsonMap["modifierLifetimeSeconds"] as? NSNumber {
           resultDecodedBuilder.modifierLifetimeSeconds = jsonValueModifierLifetimeSeconds.int32Value
@@ -1932,7 +1932,7 @@ public extension Pogoprotos.Settings.Master.Item {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Settings.Master.Item.IncenseAttributes.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Settings.Master.Item.IncenseAttributes.Builder {
         let resultDecodedBuilder = Pogoprotos.Settings.Master.Item.IncenseAttributes.Builder()
         if let jsonValueIncenseLifetimeSeconds = jsonMap["incenseLifetimeSeconds"] as? NSNumber {
           resultDecodedBuilder.incenseLifetimeSeconds = jsonValueIncenseLifetimeSeconds.int32Value
@@ -2204,7 +2204,7 @@ public extension Pogoprotos.Settings.Master.Item {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Settings.Master.Item.InventoryUpgradeAttributes.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Settings.Master.Item.InventoryUpgradeAttributes.Builder {
         let resultDecodedBuilder = Pogoprotos.Settings.Master.Item.InventoryUpgradeAttributes.Builder()
         if let jsonValueAdditionalStorage = jsonMap["additionalStorage"] as? NSNumber {
           resultDecodedBuilder.additionalStorage = jsonValueAdditionalStorage.int32Value
@@ -2550,7 +2550,7 @@ public extension Pogoprotos.Settings.Master.Item {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Settings.Master.Item.PokeballAttributes.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Settings.Master.Item.PokeballAttributes.Builder {
         let resultDecodedBuilder = Pogoprotos.Settings.Master.Item.PokeballAttributes.Builder()
         if let jsonValueItemEffect = jsonMap["itemEffect"] as? String {
           resultDecodedBuilder.itemEffect = try Pogoprotos.Enums.ItemEffect.fromString(str: jsonValueItemEffect)
@@ -2804,7 +2804,7 @@ public extension Pogoprotos.Settings.Master.Item {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Settings.Master.Item.PotionAttributes.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Settings.Master.Item.PotionAttributes.Builder {
         let resultDecodedBuilder = Pogoprotos.Settings.Master.Item.PotionAttributes.Builder()
         if let jsonValueStaPercent = jsonMap["staPercent"] as? NSNumber {
           resultDecodedBuilder.staPercent = jsonValueStaPercent.floatValue
@@ -3005,7 +3005,7 @@ public extension Pogoprotos.Settings.Master.Item {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Settings.Master.Item.ReviveAttributes.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Settings.Master.Item.ReviveAttributes.Builder {
         let resultDecodedBuilder = Pogoprotos.Settings.Master.Item.ReviveAttributes.Builder()
         if let jsonValueStaPercent = jsonMap["staPercent"] as? NSNumber {
           resultDecodedBuilder.staPercent = jsonValueStaPercent.floatValue

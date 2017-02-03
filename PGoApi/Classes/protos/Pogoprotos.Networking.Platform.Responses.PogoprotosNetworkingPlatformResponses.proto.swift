@@ -361,7 +361,7 @@ public extension Pogoprotos.Networking.Platform.Responses {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Platform.Responses.BuyItemAndroidResponse.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Platform.Responses.BuyItemAndroidResponse.Builder {
         let resultDecodedBuilder = Pogoprotos.Networking.Platform.Responses.BuyItemAndroidResponse.Builder()
         if let jsonValueResult = jsonMap["result"] as? String {
           resultDecodedBuilder.result = try Pogoprotos.Networking.Platform.Responses.BuyItemAndroidResponse.Status.fromString(str: jsonValueResult)
@@ -603,7 +603,7 @@ public extension Pogoprotos.Networking.Platform.Responses {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Platform.Responses.BuyItemPokeCoinsResponse.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Platform.Responses.BuyItemPokeCoinsResponse.Builder {
         let resultDecodedBuilder = Pogoprotos.Networking.Platform.Responses.BuyItemPokeCoinsResponse.Builder()
         if let jsonValueResult = jsonMap["result"] as? String {
           resultDecodedBuilder.result = try Pogoprotos.Networking.Platform.Responses.BuyItemPokeCoinsResponse.Status.fromString(str: jsonValueResult)
@@ -858,7 +858,7 @@ public extension Pogoprotos.Networking.Platform.Responses {
                   }
                 }
               }
-              class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Platform.Responses.GetStoreItemsResponse.StoreItem.TagsEntry.Builder {
+              override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Platform.Responses.GetStoreItemsResponse.StoreItem.TagsEntry.Builder {
                 let resultDecodedBuilder = Pogoprotos.Networking.Platform.Responses.GetStoreItemsResponse.StoreItem.TagsEntry.Builder()
                 if let jsonValueKey = jsonMap["key"] as? String {
                   resultDecodedBuilder.key = jsonValueKey
@@ -1481,7 +1481,7 @@ public extension Pogoprotos.Networking.Platform.Responses {
               }
             }
           }
-          class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Platform.Responses.GetStoreItemsResponse.StoreItem.Builder {
+          override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Platform.Responses.GetStoreItemsResponse.StoreItem.Builder {
             let resultDecodedBuilder = Pogoprotos.Networking.Platform.Responses.GetStoreItemsResponse.StoreItem.Builder()
             if let jsonValueItemId = jsonMap["itemId"] as? String {
               resultDecodedBuilder.itemId = jsonValueItemId
@@ -1888,7 +1888,7 @@ public extension Pogoprotos.Networking.Platform.Responses {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Platform.Responses.GetStoreItemsResponse.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Platform.Responses.GetStoreItemsResponse.Builder {
         let resultDecodedBuilder = Pogoprotos.Networking.Platform.Responses.GetStoreItemsResponse.Builder()
         if let jsonValueStatus = jsonMap["status"] as? String {
           resultDecodedBuilder.status = try Pogoprotos.Networking.Platform.Responses.GetStoreItemsResponse.Status.fromString(str: jsonValueStatus)
@@ -2108,7 +2108,7 @@ public extension Pogoprotos.Networking.Platform.Responses {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Platform.Responses.SendEncryptedSignatureResponse.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Platform.Responses.SendEncryptedSignatureResponse.Builder {
         let resultDecodedBuilder = Pogoprotos.Networking.Platform.Responses.SendEncryptedSignatureResponse.Builder()
         if let jsonValueReceived = jsonMap["received"] as? Bool {
           resultDecodedBuilder.received = jsonValueReceived

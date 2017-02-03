@@ -433,7 +433,7 @@ public extension Pogoprotos.Data.Capture {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Data.Capture.CaptureAward.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Data.Capture.CaptureAward.Builder {
         let resultDecodedBuilder = Pogoprotos.Data.Capture.CaptureAward.Builder()
         if let jsonValueActivityType = jsonMap["activityType"] as? Array<String> {
           var jsonArrayActivityType:Array<Pogoprotos.Enums.ActivityType> = []
@@ -782,7 +782,7 @@ public extension Pogoprotos.Data.Capture {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Data.Capture.CaptureProbability.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Data.Capture.CaptureProbability.Builder {
         let resultDecodedBuilder = Pogoprotos.Data.Capture.CaptureProbability.Builder()
         if let jsonValuePokeballType = jsonMap["pokeballType"] as? Array<String> {
           var jsonArrayPokeballType:Array<Pogoprotos.Inventory.Item.ItemId> = []

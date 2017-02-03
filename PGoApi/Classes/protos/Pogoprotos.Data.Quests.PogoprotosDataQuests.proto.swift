@@ -274,7 +274,7 @@ public extension Pogoprotos.Data.Quests {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Data.Quests.DailyQuest.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Data.Quests.DailyQuest.Builder {
         let resultDecodedBuilder = Pogoprotos.Data.Quests.DailyQuest.Builder()
         if let jsonValueCurrentPeriodBucket = jsonMap["currentPeriodBucket"] as? NSNumber {
           resultDecodedBuilder.currentPeriodBucket = jsonValueCurrentPeriodBucket.int32Value
@@ -566,7 +566,7 @@ public extension Pogoprotos.Data.Quests {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Data.Quests.Quest.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Data.Quests.Quest.Builder {
         let resultDecodedBuilder = Pogoprotos.Data.Quests.Quest.Builder()
         if let jsonValueQuestType = jsonMap["questType"] as? String {
           resultDecodedBuilder.questType = try Pogoprotos.Enums.QuestType.fromString(str: jsonValueQuestType)

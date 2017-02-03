@@ -358,7 +358,7 @@ public extension Pogoprotos.Settings.Master.Quest {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Settings.Master.Quest.DailyQuestSettings.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Settings.Master.Quest.DailyQuestSettings.Builder {
         let resultDecodedBuilder = Pogoprotos.Settings.Master.Quest.DailyQuestSettings.Builder()
         if let jsonValueBucketsPerDay = jsonMap["bucketsPerDay"] as? NSNumber {
           resultDecodedBuilder.bucketsPerDay = jsonValueBucketsPerDay.int32Value

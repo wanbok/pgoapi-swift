@@ -996,7 +996,7 @@ public extension Pogoprotos.Networking.Requests.Messages {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.AddFortModifierMessage.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.AddFortModifierMessage.Builder {
         let resultDecodedBuilder = Pogoprotos.Networking.Requests.Messages.AddFortModifierMessage.Builder()
         if let jsonValueModifierType = jsonMap["modifierType"] as? String {
           resultDecodedBuilder.modifierType = try Pogoprotos.Inventory.Item.ItemId.fromString(str: jsonValueModifierType)
@@ -1480,7 +1480,7 @@ public extension Pogoprotos.Networking.Requests.Messages {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.AttackGymMessage.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.AttackGymMessage.Builder {
         let resultDecodedBuilder = Pogoprotos.Networking.Requests.Messages.AttackGymMessage.Builder()
         if let jsonValueGymId = jsonMap["gymId"] as? String {
           resultDecodedBuilder.gymId = jsonValueGymId
@@ -1986,7 +1986,7 @@ public extension Pogoprotos.Networking.Requests.Messages {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.CatchPokemonMessage.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.CatchPokemonMessage.Builder {
         let resultDecodedBuilder = Pogoprotos.Networking.Requests.Messages.CatchPokemonMessage.Builder()
         if let jsonValueEncounterId = jsonMap["encounterId"] as? String {
           resultDecodedBuilder.encounterId = UInt64(jsonValueEncounterId)!
@@ -2156,7 +2156,7 @@ public extension Pogoprotos.Networking.Requests.Messages {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.CheckAwardedBadgesMessage.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.CheckAwardedBadgesMessage.Builder {
         let resultDecodedBuilder = Pogoprotos.Networking.Requests.Messages.CheckAwardedBadgesMessage.Builder()
         return resultDecodedBuilder
       }
@@ -2351,7 +2351,7 @@ public extension Pogoprotos.Networking.Requests.Messages {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.CheckChallengeMessage.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.CheckChallengeMessage.Builder {
         let resultDecodedBuilder = Pogoprotos.Networking.Requests.Messages.CheckChallengeMessage.Builder()
         if let jsonValueDebugRequest = jsonMap["debugRequest"] as? Bool {
           resultDecodedBuilder.debugRequest = jsonValueDebugRequest
@@ -2549,7 +2549,7 @@ public extension Pogoprotos.Networking.Requests.Messages {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.CheckCodenameAvailableMessage.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.CheckCodenameAvailableMessage.Builder {
         let resultDecodedBuilder = Pogoprotos.Networking.Requests.Messages.CheckCodenameAvailableMessage.Builder()
         if let jsonValueCodename = jsonMap["codename"] as? String {
           resultDecodedBuilder.codename = jsonValueCodename
@@ -2747,7 +2747,7 @@ public extension Pogoprotos.Networking.Requests.Messages {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.ClaimCodenameMessage.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.ClaimCodenameMessage.Builder {
         let resultDecodedBuilder = Pogoprotos.Networking.Requests.Messages.ClaimCodenameMessage.Builder()
         if let jsonValueCodename = jsonMap["codename"] as? String {
           resultDecodedBuilder.codename = jsonValueCodename
@@ -2899,7 +2899,7 @@ public extension Pogoprotos.Networking.Requests.Messages {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.CollectDailyBonusMessage.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.CollectDailyBonusMessage.Builder {
         let resultDecodedBuilder = Pogoprotos.Networking.Requests.Messages.CollectDailyBonusMessage.Builder()
         return resultDecodedBuilder
       }
@@ -3048,7 +3048,7 @@ public extension Pogoprotos.Networking.Requests.Messages {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.CollectDailyDefenderBonusMessage.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.CollectDailyDefenderBonusMessage.Builder {
         let resultDecodedBuilder = Pogoprotos.Networking.Requests.Messages.CollectDailyDefenderBonusMessage.Builder()
         return resultDecodedBuilder
       }
@@ -3384,7 +3384,7 @@ public extension Pogoprotos.Networking.Requests.Messages {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.DiskEncounterMessage.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.DiskEncounterMessage.Builder {
         let resultDecodedBuilder = Pogoprotos.Networking.Requests.Messages.DiskEncounterMessage.Builder()
         if let jsonValueEncounterId = jsonMap["encounterId"] as? String {
           resultDecodedBuilder.encounterId = UInt64(jsonValueEncounterId)!
@@ -3545,7 +3545,7 @@ public extension Pogoprotos.Networking.Requests.Messages {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.DownloadItemTemplatesMessage.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.DownloadItemTemplatesMessage.Builder {
         let resultDecodedBuilder = Pogoprotos.Networking.Requests.Messages.DownloadItemTemplatesMessage.Builder()
         return resultDecodedBuilder
       }
@@ -3932,7 +3932,7 @@ public extension Pogoprotos.Networking.Requests.Messages {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.DownloadRemoteConfigVersionMessage.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.DownloadRemoteConfigVersionMessage.Builder {
         let resultDecodedBuilder = Pogoprotos.Networking.Requests.Messages.DownloadRemoteConfigVersionMessage.Builder()
         if let jsonValuePlatform = jsonMap["platform"] as? String {
           resultDecodedBuilder.platform = try Pogoprotos.Enums.Platform.fromString(str: jsonValuePlatform)
@@ -4142,7 +4142,7 @@ public extension Pogoprotos.Networking.Requests.Messages {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.DownloadSettingsMessage.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.DownloadSettingsMessage.Builder {
         let resultDecodedBuilder = Pogoprotos.Networking.Requests.Messages.DownloadSettingsMessage.Builder()
         if let jsonValueHash = jsonMap["hash"] as? String {
           resultDecodedBuilder.hash = jsonValueHash
@@ -4294,7 +4294,7 @@ public extension Pogoprotos.Networking.Requests.Messages {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.EchoMessage.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.EchoMessage.Builder {
         let resultDecodedBuilder = Pogoprotos.Networking.Requests.Messages.EchoMessage.Builder()
         return resultDecodedBuilder
       }
@@ -4630,7 +4630,7 @@ public extension Pogoprotos.Networking.Requests.Messages {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.EncounterMessage.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.EncounterMessage.Builder {
         let resultDecodedBuilder = Pogoprotos.Networking.Requests.Messages.EncounterMessage.Builder()
         if let jsonValueEncounterId = jsonMap["encounterId"] as? String {
           resultDecodedBuilder.encounterId = UInt64(jsonValueEncounterId)!
@@ -4841,7 +4841,7 @@ public extension Pogoprotos.Networking.Requests.Messages {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.EncounterTutorialCompleteMessage.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.EncounterTutorialCompleteMessage.Builder {
         let resultDecodedBuilder = Pogoprotos.Networking.Requests.Messages.EncounterTutorialCompleteMessage.Builder()
         if let jsonValuePokemonId = jsonMap["pokemonId"] as? String {
           resultDecodedBuilder.pokemonId = try Pogoprotos.Enums.PokemonId.fromString(str: jsonValuePokemonId)
@@ -5043,7 +5043,7 @@ public extension Pogoprotos.Networking.Requests.Messages {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.EquipBadgeMessage.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.EquipBadgeMessage.Builder {
         let resultDecodedBuilder = Pogoprotos.Networking.Requests.Messages.EquipBadgeMessage.Builder()
         if let jsonValueBadgeType = jsonMap["badgeType"] as? String {
           resultDecodedBuilder.badgeType = try Pogoprotos.Enums.BadgeType.fromString(str: jsonValueBadgeType)
@@ -5241,7 +5241,7 @@ public extension Pogoprotos.Networking.Requests.Messages {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.EvolvePokemonMessage.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.EvolvePokemonMessage.Builder {
         let resultDecodedBuilder = Pogoprotos.Networking.Requests.Messages.EvolvePokemonMessage.Builder()
         if let jsonValuePokemonId = jsonMap["pokemonId"] as? String {
           resultDecodedBuilder.pokemonId = UInt64(jsonValuePokemonId)!
@@ -5580,7 +5580,7 @@ public extension Pogoprotos.Networking.Requests.Messages {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.FortDeployPokemonMessage.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.FortDeployPokemonMessage.Builder {
         let resultDecodedBuilder = Pogoprotos.Networking.Requests.Messages.FortDeployPokemonMessage.Builder()
         if let jsonValueFortId = jsonMap["fortId"] as? String {
           resultDecodedBuilder.fortId = jsonValueFortId
@@ -5881,7 +5881,7 @@ public extension Pogoprotos.Networking.Requests.Messages {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.FortDetailsMessage.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.FortDetailsMessage.Builder {
         let resultDecodedBuilder = Pogoprotos.Networking.Requests.Messages.FortDetailsMessage.Builder()
         if let jsonValueFortId = jsonMap["fortId"] as? String {
           resultDecodedBuilder.fortId = jsonValueFortId
@@ -6226,7 +6226,7 @@ public extension Pogoprotos.Networking.Requests.Messages {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.FortRecallPokemonMessage.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.FortRecallPokemonMessage.Builder {
         let resultDecodedBuilder = Pogoprotos.Networking.Requests.Messages.FortRecallPokemonMessage.Builder()
         if let jsonValueFortId = jsonMap["fortId"] as? String {
           resultDecodedBuilder.fortId = jsonValueFortId
@@ -6621,7 +6621,7 @@ public extension Pogoprotos.Networking.Requests.Messages {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.FortSearchMessage.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.FortSearchMessage.Builder {
         let resultDecodedBuilder = Pogoprotos.Networking.Requests.Messages.FortSearchMessage.Builder()
         if let jsonValueFortId = jsonMap["fortId"] as? String {
           resultDecodedBuilder.fortId = jsonValueFortId
@@ -7023,7 +7023,7 @@ public extension Pogoprotos.Networking.Requests.Messages {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.GetAssetDigestMessage.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.GetAssetDigestMessage.Builder {
         let resultDecodedBuilder = Pogoprotos.Networking.Requests.Messages.GetAssetDigestMessage.Builder()
         if let jsonValuePlatform = jsonMap["platform"] as? String {
           resultDecodedBuilder.platform = try Pogoprotos.Enums.Platform.fromString(str: jsonValuePlatform)
@@ -7186,7 +7186,7 @@ public extension Pogoprotos.Networking.Requests.Messages {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.GetBuddyWalkedMessage.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.GetBuddyWalkedMessage.Builder {
         let resultDecodedBuilder = Pogoprotos.Networking.Requests.Messages.GetBuddyWalkedMessage.Builder()
         return resultDecodedBuilder
       }
@@ -7379,7 +7379,7 @@ public extension Pogoprotos.Networking.Requests.Messages {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.GetDownloadUrlsMessage.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.GetDownloadUrlsMessage.Builder {
         let resultDecodedBuilder = Pogoprotos.Networking.Requests.Messages.GetDownloadUrlsMessage.Builder()
         if let jsonValueAssetId = jsonMap["assetId"] as? Array<String> {
           resultDecodedBuilder.assetId = jsonValueAssetId
@@ -7812,7 +7812,7 @@ public extension Pogoprotos.Networking.Requests.Messages {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.GetGymDetailsMessage.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.GetGymDetailsMessage.Builder {
         let resultDecodedBuilder = Pogoprotos.Networking.Requests.Messages.GetGymDetailsMessage.Builder()
         if let jsonValueGymId = jsonMap["gymId"] as? String {
           resultDecodedBuilder.gymId = jsonValueGymId
@@ -7979,7 +7979,7 @@ public extension Pogoprotos.Networking.Requests.Messages {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.GetHatchedEggsMessage.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.GetHatchedEggsMessage.Builder {
         let resultDecodedBuilder = Pogoprotos.Networking.Requests.Messages.GetHatchedEggsMessage.Builder()
         return resultDecodedBuilder
       }
@@ -8221,7 +8221,7 @@ public extension Pogoprotos.Networking.Requests.Messages {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.GetIncensePokemonMessage.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.GetIncensePokemonMessage.Builder {
         let resultDecodedBuilder = Pogoprotos.Networking.Requests.Messages.GetIncensePokemonMessage.Builder()
         if let jsonValuePlayerLatitude = jsonMap["playerLatitude"] as? NSNumber {
           resultDecodedBuilder.playerLatitude = jsonValuePlayerLatitude.doubleValue
@@ -8470,7 +8470,7 @@ public extension Pogoprotos.Networking.Requests.Messages {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.GetInventoryMessage.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.GetInventoryMessage.Builder {
         let resultDecodedBuilder = Pogoprotos.Networking.Requests.Messages.GetInventoryMessage.Builder()
         if let jsonValueLastTimestampMs = jsonMap["lastTimestampMs"] as? String {
           resultDecodedBuilder.lastTimestampMs = Int64(jsonValueLastTimestampMs)!
@@ -8840,7 +8840,7 @@ public extension Pogoprotos.Networking.Requests.Messages {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.GetMapObjectsMessage.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.GetMapObjectsMessage.Builder {
         let resultDecodedBuilder = Pogoprotos.Networking.Requests.Messages.GetMapObjectsMessage.Builder()
         if let jsonValueCellId = jsonMap["cellId"] as? Array<String> {
           var jsonArrayCellId:Array<UInt64> = []
@@ -9154,7 +9154,7 @@ public extension Pogoprotos.Networking.Requests.Messages {
               }
             }
           }
-          class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.GetPlayerMessage.PlayerLocale.Builder {
+          override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.GetPlayerMessage.PlayerLocale.Builder {
             let resultDecodedBuilder = Pogoprotos.Networking.Requests.Messages.GetPlayerMessage.PlayerLocale.Builder()
             if let jsonValueCountry = jsonMap["country"] as? String {
               resultDecodedBuilder.country = jsonValueCountry
@@ -9399,7 +9399,7 @@ public extension Pogoprotos.Networking.Requests.Messages {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.GetPlayerMessage.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.GetPlayerMessage.Builder {
         let resultDecodedBuilder = Pogoprotos.Networking.Requests.Messages.GetPlayerMessage.Builder()
         if let jsonValuePlayerLocale = jsonMap["playerLocale"] as? Dictionary<String,Any> {
           resultDecodedBuilder.playerLocale = try Pogoprotos.Networking.Requests.Messages.GetPlayerMessage.PlayerLocale.Builder.decodeToBuilder(jsonMap:jsonValuePlayerLocale).build()
@@ -9598,7 +9598,7 @@ public extension Pogoprotos.Networking.Requests.Messages {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.GetPlayerProfileMessage.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.GetPlayerProfileMessage.Builder {
         let resultDecodedBuilder = Pogoprotos.Networking.Requests.Messages.GetPlayerProfileMessage.Builder()
         if let jsonValuePlayerName = jsonMap["playerName"] as? String {
           resultDecodedBuilder.playerName = jsonValuePlayerName
@@ -9750,7 +9750,7 @@ public extension Pogoprotos.Networking.Requests.Messages {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.GetSuggestedCodenamesMessage.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.GetSuggestedCodenamesMessage.Builder {
         let resultDecodedBuilder = Pogoprotos.Networking.Requests.Messages.GetSuggestedCodenamesMessage.Builder()
         return resultDecodedBuilder
       }
@@ -9992,7 +9992,7 @@ public extension Pogoprotos.Networking.Requests.Messages {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.IncenseEncounterMessage.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.IncenseEncounterMessage.Builder {
         let resultDecodedBuilder = Pogoprotos.Networking.Requests.Messages.IncenseEncounterMessage.Builder()
         if let jsonValueEncounterId = jsonMap["encounterId"] as? String {
           resultDecodedBuilder.encounterId = UInt64(jsonValueEncounterId)!
@@ -10193,7 +10193,7 @@ public extension Pogoprotos.Networking.Requests.Messages {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.LevelUpRewardsMessage.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.LevelUpRewardsMessage.Builder {
         let resultDecodedBuilder = Pogoprotos.Networking.Requests.Messages.LevelUpRewardsMessage.Builder()
         if let jsonValueLevel = jsonMap["level"] as? NSNumber {
           resultDecodedBuilder.level = jsonValueLevel.int32Value
@@ -10491,7 +10491,7 @@ public extension Pogoprotos.Networking.Requests.Messages {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.MarkTutorialCompleteMessage.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.MarkTutorialCompleteMessage.Builder {
         let resultDecodedBuilder = Pogoprotos.Networking.Requests.Messages.MarkTutorialCompleteMessage.Builder()
         if let jsonValueTutorialsCompleted = jsonMap["tutorialsCompleted"] as? Array<String> {
           var jsonArrayTutorialsCompleted:Array<Pogoprotos.Enums.TutorialState> = []
@@ -10747,7 +10747,7 @@ public extension Pogoprotos.Networking.Requests.Messages {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.NicknamePokemonMessage.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.NicknamePokemonMessage.Builder {
         let resultDecodedBuilder = Pogoprotos.Networking.Requests.Messages.NicknamePokemonMessage.Builder()
         if let jsonValuePokemonId = jsonMap["pokemonId"] as? String {
           resultDecodedBuilder.pokemonId = UInt64(jsonValuePokemonId)!
@@ -10995,7 +10995,7 @@ public extension Pogoprotos.Networking.Requests.Messages {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.PlayerUpdateMessage.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.PlayerUpdateMessage.Builder {
         let resultDecodedBuilder = Pogoprotos.Networking.Requests.Messages.PlayerUpdateMessage.Builder()
         if let jsonValueLatitude = jsonMap["latitude"] as? NSNumber {
           resultDecodedBuilder.latitude = jsonValueLatitude.doubleValue
@@ -11247,7 +11247,7 @@ public extension Pogoprotos.Networking.Requests.Messages {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.RecycleInventoryItemMessage.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.RecycleInventoryItemMessage.Builder {
         let resultDecodedBuilder = Pogoprotos.Networking.Requests.Messages.RecycleInventoryItemMessage.Builder()
         if let jsonValueItemId = jsonMap["itemId"] as? String {
           resultDecodedBuilder.itemId = try Pogoprotos.Inventory.Item.ItemId.fromString(str: jsonValueItemId)
@@ -11495,7 +11495,7 @@ public extension Pogoprotos.Networking.Requests.Messages {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.RegisterBackgroundDeviceMessage.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.RegisterBackgroundDeviceMessage.Builder {
         let resultDecodedBuilder = Pogoprotos.Networking.Requests.Messages.RegisterBackgroundDeviceMessage.Builder()
         if let jsonValueDeviceType = jsonMap["deviceType"] as? String {
           resultDecodedBuilder.deviceType = jsonValueDeviceType
@@ -11696,7 +11696,7 @@ public extension Pogoprotos.Networking.Requests.Messages {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.ReleasePokemonMessage.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.ReleasePokemonMessage.Builder {
         let resultDecodedBuilder = Pogoprotos.Networking.Requests.Messages.ReleasePokemonMessage.Builder()
         if let jsonValuePokemonId = jsonMap["pokemonId"] as? String {
           resultDecodedBuilder.pokemonId = UInt64(jsonValuePokemonId)!
@@ -11934,7 +11934,7 @@ public extension Pogoprotos.Networking.Requests.Messages {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.SetAvatarMessage.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.SetAvatarMessage.Builder {
         let resultDecodedBuilder = Pogoprotos.Networking.Requests.Messages.SetAvatarMessage.Builder()
         if let jsonValuePlayerAvatar = jsonMap["playerAvatar"] as? Dictionary<String,Any> {
           resultDecodedBuilder.playerAvatar = try Pogoprotos.Data.Player.PlayerAvatar.Builder.decodeToBuilder(jsonMap:jsonValuePlayerAvatar).build()
@@ -12133,7 +12133,7 @@ public extension Pogoprotos.Networking.Requests.Messages {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.SetBuddyPokemonMessage.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.SetBuddyPokemonMessage.Builder {
         let resultDecodedBuilder = Pogoprotos.Networking.Requests.Messages.SetBuddyPokemonMessage.Builder()
         if let jsonValuePokemonId = jsonMap["pokemonId"] as? String {
           resultDecodedBuilder.pokemonId = UInt64(jsonValuePokemonId)!
@@ -12371,7 +12371,7 @@ public extension Pogoprotos.Networking.Requests.Messages {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.SetContactSettingsMessage.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.SetContactSettingsMessage.Builder {
         let resultDecodedBuilder = Pogoprotos.Networking.Requests.Messages.SetContactSettingsMessage.Builder()
         if let jsonValueContactSettings = jsonMap["contactSettings"] as? Dictionary<String,Any> {
           resultDecodedBuilder.contactSettings = try Pogoprotos.Data.Player.ContactSettings.Builder.decodeToBuilder(jsonMap:jsonValueContactSettings).build()
@@ -12618,7 +12618,7 @@ public extension Pogoprotos.Networking.Requests.Messages {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.SetFavoritePokemonMessage.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.SetFavoritePokemonMessage.Builder {
         let resultDecodedBuilder = Pogoprotos.Networking.Requests.Messages.SetFavoritePokemonMessage.Builder()
         if let jsonValuePokemonId = jsonMap["pokemonId"] as? String {
           resultDecodedBuilder.pokemonId = Int64(jsonValuePokemonId)!
@@ -12823,7 +12823,7 @@ public extension Pogoprotos.Networking.Requests.Messages {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.SetPlayerTeamMessage.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.SetPlayerTeamMessage.Builder {
         let resultDecodedBuilder = Pogoprotos.Networking.Requests.Messages.SetPlayerTeamMessage.Builder()
         if let jsonValueTeam = jsonMap["team"] as? String {
           resultDecodedBuilder.team = try Pogoprotos.Enums.TeamColor.fromString(str: jsonValueTeam)
@@ -12975,7 +12975,7 @@ public extension Pogoprotos.Networking.Requests.Messages {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.SfidaActionLogMessage.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.SfidaActionLogMessage.Builder {
         let resultDecodedBuilder = Pogoprotos.Networking.Requests.Messages.SfidaActionLogMessage.Builder()
         return resultDecodedBuilder
       }
@@ -13371,7 +13371,7 @@ public extension Pogoprotos.Networking.Requests.Messages {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.StartGymBattleMessage.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.StartGymBattleMessage.Builder {
         let resultDecodedBuilder = Pogoprotos.Networking.Requests.Messages.StartGymBattleMessage.Builder()
         if let jsonValueGymId = jsonMap["gymId"] as? String {
           resultDecodedBuilder.gymId = jsonValueGymId
@@ -13585,7 +13585,7 @@ public extension Pogoprotos.Networking.Requests.Messages {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.UpgradePokemonMessage.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.UpgradePokemonMessage.Builder {
         let resultDecodedBuilder = Pogoprotos.Networking.Requests.Messages.UpgradePokemonMessage.Builder()
         if let jsonValuePokemonId = jsonMap["pokemonId"] as? String {
           resultDecodedBuilder.pokemonId = UInt64(jsonValuePokemonId)!
@@ -13787,7 +13787,7 @@ public extension Pogoprotos.Networking.Requests.Messages {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.UseIncenseMessage.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.UseIncenseMessage.Builder {
         let resultDecodedBuilder = Pogoprotos.Networking.Requests.Messages.UseIncenseMessage.Builder()
         if let jsonValueIncenseType = jsonMap["incenseType"] as? String {
           resultDecodedBuilder.incenseType = try Pogoprotos.Inventory.Item.ItemId.fromString(str: jsonValueIncenseType)
@@ -14083,7 +14083,7 @@ public extension Pogoprotos.Networking.Requests.Messages {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.UseItemCaptureMessage.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.UseItemCaptureMessage.Builder {
         let resultDecodedBuilder = Pogoprotos.Networking.Requests.Messages.UseItemCaptureMessage.Builder()
         if let jsonValueItemId = jsonMap["itemId"] as? String {
           resultDecodedBuilder.itemId = try Pogoprotos.Inventory.Item.ItemId.fromString(str: jsonValueItemId)
@@ -14334,7 +14334,7 @@ public extension Pogoprotos.Networking.Requests.Messages {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.UseItemEggIncubatorMessage.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.UseItemEggIncubatorMessage.Builder {
         let resultDecodedBuilder = Pogoprotos.Networking.Requests.Messages.UseItemEggIncubatorMessage.Builder()
         if let jsonValueItemId = jsonMap["itemId"] as? String {
           resultDecodedBuilder.itemId = jsonValueItemId
@@ -14680,7 +14680,7 @@ public extension Pogoprotos.Networking.Requests.Messages {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.UseItemGymMessage.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.UseItemGymMessage.Builder {
         let resultDecodedBuilder = Pogoprotos.Networking.Requests.Messages.UseItemGymMessage.Builder()
         if let jsonValueItemId = jsonMap["itemId"] as? String {
           resultDecodedBuilder.itemId = try Pogoprotos.Inventory.Item.ItemId.fromString(str: jsonValueItemId)
@@ -14938,7 +14938,7 @@ public extension Pogoprotos.Networking.Requests.Messages {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.UseItemPotionMessage.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.UseItemPotionMessage.Builder {
         let resultDecodedBuilder = Pogoprotos.Networking.Requests.Messages.UseItemPotionMessage.Builder()
         if let jsonValueItemId = jsonMap["itemId"] as? String {
           resultDecodedBuilder.itemId = try Pogoprotos.Inventory.Item.ItemId.fromString(str: jsonValueItemId)
@@ -15190,7 +15190,7 @@ public extension Pogoprotos.Networking.Requests.Messages {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.UseItemReviveMessage.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.UseItemReviveMessage.Builder {
         let resultDecodedBuilder = Pogoprotos.Networking.Requests.Messages.UseItemReviveMessage.Builder()
         if let jsonValueItemId = jsonMap["itemId"] as? String {
           resultDecodedBuilder.itemId = try Pogoprotos.Inventory.Item.ItemId.fromString(str: jsonValueItemId)
@@ -15395,7 +15395,7 @@ public extension Pogoprotos.Networking.Requests.Messages {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.UseItemXpBoostMessage.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.UseItemXpBoostMessage.Builder {
         let resultDecodedBuilder = Pogoprotos.Networking.Requests.Messages.UseItemXpBoostMessage.Builder()
         if let jsonValueItemId = jsonMap["itemId"] as? String {
           resultDecodedBuilder.itemId = try Pogoprotos.Inventory.Item.ItemId.fromString(str: jsonValueItemId)
@@ -15593,7 +15593,7 @@ public extension Pogoprotos.Networking.Requests.Messages {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.VerifyChallengeMessage.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Messages.VerifyChallengeMessage.Builder {
         let resultDecodedBuilder = Pogoprotos.Networking.Requests.Messages.VerifyChallengeMessage.Builder()
         if let jsonValueToken = jsonMap["token"] as? String {
           resultDecodedBuilder.token = jsonValueToken

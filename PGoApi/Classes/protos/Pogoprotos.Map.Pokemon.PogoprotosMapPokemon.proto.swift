@@ -491,7 +491,7 @@ public extension Pogoprotos.Map.Pokemon {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Map.Pokemon.MapPokemon.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Map.Pokemon.MapPokemon.Builder {
         let resultDecodedBuilder = Pogoprotos.Map.Pokemon.MapPokemon.Builder()
         if let jsonValueSpawnPointId = jsonMap["spawnPointId"] as? String {
           resultDecodedBuilder.spawnPointId = jsonValueSpawnPointId
@@ -896,7 +896,7 @@ public extension Pogoprotos.Map.Pokemon {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Map.Pokemon.NearbyPokemon.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Map.Pokemon.NearbyPokemon.Builder {
         let resultDecodedBuilder = Pogoprotos.Map.Pokemon.NearbyPokemon.Builder()
         if let jsonValuePokemonId = jsonMap["pokemonId"] as? String {
           resultDecodedBuilder.pokemonId = try Pogoprotos.Enums.PokemonId.fromString(str: jsonValuePokemonId)
@@ -1428,7 +1428,7 @@ public extension Pogoprotos.Map.Pokemon {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Map.Pokemon.WildPokemon.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Map.Pokemon.WildPokemon.Builder {
         let resultDecodedBuilder = Pogoprotos.Map.Pokemon.WildPokemon.Builder()
         if let jsonValueEncounterId = jsonMap["encounterId"] as? String {
           resultDecodedBuilder.encounterId = UInt64(jsonValueEncounterId)!

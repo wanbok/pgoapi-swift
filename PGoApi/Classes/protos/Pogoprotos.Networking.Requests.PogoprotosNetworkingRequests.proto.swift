@@ -741,7 +741,7 @@ public extension Pogoprotos.Networking.Requests {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Request.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Requests.Request.Builder {
         let resultDecodedBuilder = Pogoprotos.Networking.Requests.Request.Builder()
         if let jsonValueRequestType = jsonMap["requestType"] as? String {
           resultDecodedBuilder.requestType = try Pogoprotos.Networking.Requests.RequestType.fromString(str: jsonValueRequestType)

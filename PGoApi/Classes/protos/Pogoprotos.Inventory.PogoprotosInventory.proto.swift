@@ -582,7 +582,7 @@ public extension Pogoprotos.Inventory {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Inventory.AppliedItem.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Inventory.AppliedItem.Builder {
         let resultDecodedBuilder = Pogoprotos.Inventory.AppliedItem.Builder()
         if let jsonValueItemId = jsonMap["itemId"] as? String {
           resultDecodedBuilder.itemId = try Pogoprotos.Inventory.Item.ItemId.fromString(str: jsonValueItemId)
@@ -791,7 +791,7 @@ public extension Pogoprotos.Inventory {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Inventory.AppliedItems.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Inventory.AppliedItems.Builder {
         let resultDecodedBuilder = Pogoprotos.Inventory.AppliedItems.Builder()
         if let jsonValueItem = jsonMap["item"] as? Array<Dictionary<String,Any>> {
           var jsonArrayItem:Array<Pogoprotos.Inventory.AppliedItem> = []
@@ -1046,7 +1046,7 @@ public extension Pogoprotos.Inventory {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Inventory.Candy.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Inventory.Candy.Builder {
         let resultDecodedBuilder = Pogoprotos.Inventory.Candy.Builder()
         if let jsonValueFamilyId = jsonMap["familyId"] as? String {
           resultDecodedBuilder.familyId = try Pogoprotos.Enums.PokemonFamilyId.fromString(str: jsonValueFamilyId)
@@ -1538,7 +1538,7 @@ public extension Pogoprotos.Inventory {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Inventory.EggIncubator.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Inventory.EggIncubator.Builder {
         let resultDecodedBuilder = Pogoprotos.Inventory.EggIncubator.Builder()
         if let jsonValueId = jsonMap["id"] as? String {
           resultDecodedBuilder.id = jsonValueId
@@ -1756,7 +1756,7 @@ public extension Pogoprotos.Inventory {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Inventory.EggIncubators.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Inventory.EggIncubators.Builder {
         let resultDecodedBuilder = Pogoprotos.Inventory.EggIncubators.Builder()
         if let jsonValueEggIncubator = jsonMap["eggIncubator"] as? Array<Dictionary<String,Any>> {
           var jsonArrayEggIncubator:Array<Pogoprotos.Inventory.EggIncubator> = []
@@ -2056,7 +2056,7 @@ public extension Pogoprotos.Inventory {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Inventory.InventoryDelta.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Inventory.InventoryDelta.Builder {
         let resultDecodedBuilder = Pogoprotos.Inventory.InventoryDelta.Builder()
         if let jsonValueOriginalTimestampMs = jsonMap["originalTimestampMs"] as? String {
           resultDecodedBuilder.originalTimestampMs = Int64(jsonValueOriginalTimestampMs)!
@@ -2271,7 +2271,7 @@ public extension Pogoprotos.Inventory {
               }
             }
           }
-          class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Inventory.InventoryItem.DeletedItem.Builder {
+          override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Inventory.InventoryItem.DeletedItem.Builder {
             let resultDecodedBuilder = Pogoprotos.Inventory.InventoryItem.DeletedItem.Builder()
             if let jsonValuePokemonId = jsonMap["pokemonId"] as? String {
               resultDecodedBuilder.pokemonId = UInt64(jsonValuePokemonId)!
@@ -2644,7 +2644,7 @@ public extension Pogoprotos.Inventory {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Inventory.InventoryItem.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Inventory.InventoryItem.Builder {
         let resultDecodedBuilder = Pogoprotos.Inventory.InventoryItem.Builder()
         if let jsonValueModifiedTimestampMs = jsonMap["modifiedTimestampMs"] as? String {
           resultDecodedBuilder.modifiedTimestampMs = Int64(jsonValueModifiedTimestampMs)!
@@ -3760,7 +3760,7 @@ public extension Pogoprotos.Inventory {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Inventory.InventoryItemData.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Inventory.InventoryItemData.Builder {
         let resultDecodedBuilder = Pogoprotos.Inventory.InventoryItemData.Builder()
         if let jsonValuePokemonData = jsonMap["pokemonData"] as? Dictionary<String,Any> {
           resultDecodedBuilder.pokemonData = try Pogoprotos.Data.PokemonData.Builder.decodeToBuilder(jsonMap:jsonValuePokemonData).build()
@@ -4481,7 +4481,7 @@ public extension Pogoprotos.Inventory {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Inventory.InventoryKey.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Inventory.InventoryKey.Builder {
         let resultDecodedBuilder = Pogoprotos.Inventory.InventoryKey.Builder()
         if let jsonValuePokemonId = jsonMap["pokemonId"] as? String {
           resultDecodedBuilder.pokemonId = UInt64(jsonValuePokemonId)!
@@ -4811,7 +4811,7 @@ public extension Pogoprotos.Inventory {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Inventory.InventoryUpgrade.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Inventory.InventoryUpgrade.Builder {
         let resultDecodedBuilder = Pogoprotos.Inventory.InventoryUpgrade.Builder()
         if let jsonValueItemId = jsonMap["itemId"] as? String {
           resultDecodedBuilder.itemId = try Pogoprotos.Inventory.Item.ItemId.fromString(str: jsonValueItemId)
@@ -5017,7 +5017,7 @@ public extension Pogoprotos.Inventory {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Inventory.InventoryUpgrades.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Inventory.InventoryUpgrades.Builder {
         let resultDecodedBuilder = Pogoprotos.Inventory.InventoryUpgrades.Builder()
         if let jsonValueInventoryUpgrades = jsonMap["inventoryUpgrades"] as? Array<Dictionary<String,Any>> {
           var jsonArrayInventoryUpgrades:Array<Pogoprotos.Inventory.InventoryUpgrade> = []

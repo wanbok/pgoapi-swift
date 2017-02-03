@@ -214,7 +214,7 @@ public extension Pogoprotos.Data.Badge {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Data.Badge.BadgeCaptureReward.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Data.Badge.BadgeCaptureReward.Builder {
         let resultDecodedBuilder = Pogoprotos.Data.Badge.BadgeCaptureReward.Builder()
         if let jsonValueCaptureRewardMultiplier = jsonMap["captureRewardMultiplier"] as? NSNumber {
           resultDecodedBuilder.captureRewardMultiplier = jsonValueCaptureRewardMultiplier.floatValue

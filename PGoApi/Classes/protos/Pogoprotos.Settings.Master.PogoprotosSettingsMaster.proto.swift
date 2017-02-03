@@ -642,7 +642,7 @@ public extension Pogoprotos.Settings.Master {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Settings.Master.BadgeSettings.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Settings.Master.BadgeSettings.Builder {
         let resultDecodedBuilder = Pogoprotos.Settings.Master.BadgeSettings.Builder()
         if let jsonValueBadgeType = jsonMap["badgeType"] as? String {
           resultDecodedBuilder.badgeType = try Pogoprotos.Enums.BadgeType.fromString(str: jsonValueBadgeType)
@@ -1732,7 +1732,7 @@ public extension Pogoprotos.Settings.Master {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Settings.Master.CameraSettings.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Settings.Master.CameraSettings.Builder {
         let resultDecodedBuilder = Pogoprotos.Settings.Master.CameraSettings.Builder()
         if let jsonValueNextCamera = jsonMap["nextCamera"] as? String {
           resultDecodedBuilder.nextCamera = jsonValueNextCamera
@@ -2225,7 +2225,7 @@ public extension Pogoprotos.Settings.Master {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Settings.Master.EncounterSettings.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Settings.Master.EncounterSettings.Builder {
         let resultDecodedBuilder = Pogoprotos.Settings.Master.EncounterSettings.Builder()
         if let jsonValueSpinBonusThreshold = jsonMap["spinBonusThreshold"] as? NSNumber {
           resultDecodedBuilder.spinBonusThreshold = jsonValueSpinBonusThreshold.floatValue
@@ -2553,7 +2553,7 @@ public extension Pogoprotos.Settings.Master {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Settings.Master.EquippedBadgeSettings.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Settings.Master.EquippedBadgeSettings.Builder {
         let resultDecodedBuilder = Pogoprotos.Settings.Master.EquippedBadgeSettings.Builder()
         if let jsonValueEquipBadgeCooldownMs = jsonMap["equipBadgeCooldownMs"] as? String {
           resultDecodedBuilder.equipBadgeCooldownMs = Int64(jsonValueEquipBadgeCooldownMs)!
@@ -3423,7 +3423,7 @@ public extension Pogoprotos.Settings.Master {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Settings.Master.GymBattleSettings.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Settings.Master.GymBattleSettings.Builder {
         let resultDecodedBuilder = Pogoprotos.Settings.Master.GymBattleSettings.Builder()
         if let jsonValueEnergyPerSec = jsonMap["energyPerSec"] as? NSNumber {
           resultDecodedBuilder.energyPerSec = jsonValueEnergyPerSec.floatValue
@@ -3860,7 +3860,7 @@ public extension Pogoprotos.Settings.Master {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Settings.Master.GymLevelSettings.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Settings.Master.GymLevelSettings.Builder {
         let resultDecodedBuilder = Pogoprotos.Settings.Master.GymLevelSettings.Builder()
         if let jsonValueRequiredExperience = jsonMap["requiredExperience"] as? Array<NSNumber> {
           var jsonArrayRequiredExperience:Array<Int32> = []
@@ -4295,7 +4295,7 @@ public extension Pogoprotos.Settings.Master {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Settings.Master.IapItemDisplay.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Settings.Master.IapItemDisplay.Builder {
         let resultDecodedBuilder = Pogoprotos.Settings.Master.IapItemDisplay.Builder()
         if let jsonValueSku = jsonMap["sku"] as? String {
           resultDecodedBuilder.sku = jsonValueSku
@@ -4808,7 +4808,7 @@ public extension Pogoprotos.Settings.Master {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Settings.Master.IapSettings.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Settings.Master.IapSettings.Builder {
         let resultDecodedBuilder = Pogoprotos.Settings.Master.IapSettings.Builder()
         if let jsonValueDailyBonusCoins = jsonMap["dailyBonusCoins"] as? NSNumber {
           resultDecodedBuilder.dailyBonusCoins = jsonValueDailyBonusCoins.int32Value
@@ -6098,7 +6098,7 @@ public extension Pogoprotos.Settings.Master {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Settings.Master.ItemSettings.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Settings.Master.ItemSettings.Builder {
         let resultDecodedBuilder = Pogoprotos.Settings.Master.ItemSettings.Builder()
         if let jsonValueItemId = jsonMap["itemId"] as? String {
           resultDecodedBuilder.itemId = try Pogoprotos.Inventory.Item.ItemId.fromString(str: jsonValueItemId)
@@ -6346,7 +6346,7 @@ public extension Pogoprotos.Settings.Master {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Settings.Master.MoveSequenceSettings.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Settings.Master.MoveSequenceSettings.Builder {
         let resultDecodedBuilder = Pogoprotos.Settings.Master.MoveSequenceSettings.Builder()
         if let jsonValueSequence = jsonMap["sequence"] as? Array<String> {
           resultDecodedBuilder.sequence = jsonValueSequence
@@ -7210,7 +7210,7 @@ public extension Pogoprotos.Settings.Master {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Settings.Master.MoveSettings.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Settings.Master.MoveSettings.Builder {
         let resultDecodedBuilder = Pogoprotos.Settings.Master.MoveSettings.Builder()
         if let jsonValueMovementId = jsonMap["movementId"] as? String {
           resultDecodedBuilder.movementId = try Pogoprotos.Enums.PokemonMove.fromString(str: jsonValueMovementId)
@@ -7678,7 +7678,7 @@ public extension Pogoprotos.Settings.Master {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Settings.Master.PlayerLevelSettings.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Settings.Master.PlayerLevelSettings.Builder {
         let resultDecodedBuilder = Pogoprotos.Settings.Master.PlayerLevelSettings.Builder()
         if let jsonValueRankNum = jsonMap["rankNum"] as? Array<NSNumber> {
           var jsonArrayRankNum:Array<Int32> = []
@@ -9199,7 +9199,7 @@ public extension Pogoprotos.Settings.Master {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Settings.Master.PokemonSettings.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Settings.Master.PokemonSettings.Builder {
         let resultDecodedBuilder = Pogoprotos.Settings.Master.PokemonSettings.Builder()
         if let jsonValuePokemonId = jsonMap["pokemonId"] as? String {
           resultDecodedBuilder.pokemonId = try Pogoprotos.Enums.PokemonId.fromString(str: jsonValuePokemonId)
@@ -9657,7 +9657,7 @@ public extension Pogoprotos.Settings.Master {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Settings.Master.PokemonUpgradeSettings.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Settings.Master.PokemonUpgradeSettings.Builder {
         let resultDecodedBuilder = Pogoprotos.Settings.Master.PokemonUpgradeSettings.Builder()
         if let jsonValueUpgradesPerLevel = jsonMap["upgradesPerLevel"] as? NSNumber {
           resultDecodedBuilder.upgradesPerLevel = jsonValueUpgradesPerLevel.int32Value
@@ -9963,7 +9963,7 @@ public extension Pogoprotos.Settings.Master {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Settings.Master.QuestSettings.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Settings.Master.QuestSettings.Builder {
         let resultDecodedBuilder = Pogoprotos.Settings.Master.QuestSettings.Builder()
         if let jsonValueQuestType = jsonMap["questType"] as? String {
           resultDecodedBuilder.questType = try Pogoprotos.Enums.QuestType.fromString(str: jsonValueQuestType)
@@ -10228,7 +10228,7 @@ public extension Pogoprotos.Settings.Master {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Settings.Master.TypeEffectiveSettings.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Settings.Master.TypeEffectiveSettings.Builder {
         let resultDecodedBuilder = Pogoprotos.Settings.Master.TypeEffectiveSettings.Builder()
         if let jsonValueAttackScalar = jsonMap["attackScalar"] as? Array<NSNumber> {
           var jsonArrayAttackScalar:Array<Float> = []

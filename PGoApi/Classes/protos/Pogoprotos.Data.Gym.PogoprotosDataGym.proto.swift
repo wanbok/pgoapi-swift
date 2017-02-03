@@ -445,7 +445,7 @@ public extension Pogoprotos.Data.Gym {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Data.Gym.GymMembership.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Data.Gym.GymMembership.Builder {
         let resultDecodedBuilder = Pogoprotos.Data.Gym.GymMembership.Builder()
         if let jsonValuePokemonData = jsonMap["pokemonData"] as? Dictionary<String,Any> {
           resultDecodedBuilder.pokemonData = try Pogoprotos.Data.PokemonData.Builder.decodeToBuilder(jsonMap:jsonValuePokemonData).build()
@@ -788,7 +788,7 @@ public extension Pogoprotos.Data.Gym {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Data.Gym.GymState.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Data.Gym.GymState.Builder {
         let resultDecodedBuilder = Pogoprotos.Data.Gym.GymState.Builder()
         if let jsonValueFortData = jsonMap["fortData"] as? Dictionary<String,Any> {
           resultDecodedBuilder.fortData = try Pogoprotos.Map.Fort.FortData.Builder.decodeToBuilder(jsonMap:jsonValueFortData).build()

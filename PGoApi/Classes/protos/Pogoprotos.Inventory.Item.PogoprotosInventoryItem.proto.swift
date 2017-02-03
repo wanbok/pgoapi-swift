@@ -498,7 +498,7 @@ public extension Pogoprotos.Inventory.Item {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Inventory.Item.ItemAward.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Inventory.Item.ItemAward.Builder {
         let resultDecodedBuilder = Pogoprotos.Inventory.Item.ItemAward.Builder()
         if let jsonValueItemId = jsonMap["itemId"] as? String {
           resultDecodedBuilder.itemId = try Pogoprotos.Inventory.Item.ItemId.fromString(str: jsonValueItemId)
@@ -797,7 +797,7 @@ public extension Pogoprotos.Inventory.Item {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Inventory.Item.ItemData.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Inventory.Item.ItemData.Builder {
         let resultDecodedBuilder = Pogoprotos.Inventory.Item.ItemData.Builder()
         if let jsonValueItemId = jsonMap["itemId"] as? String {
           resultDecodedBuilder.itemId = try Pogoprotos.Inventory.Item.ItemId.fromString(str: jsonValueItemId)

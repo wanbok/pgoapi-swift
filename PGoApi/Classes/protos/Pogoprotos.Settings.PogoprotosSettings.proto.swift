@@ -334,7 +334,7 @@ public extension Pogoprotos.Settings {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Settings.DownloadSettingsAction.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Settings.DownloadSettingsAction.Builder {
         let resultDecodedBuilder = Pogoprotos.Settings.DownloadSettingsAction.Builder()
         if let jsonValueHash = jsonMap["hash"] as? String {
           resultDecodedBuilder.hash = jsonValueHash
@@ -530,7 +530,7 @@ public extension Pogoprotos.Settings {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Settings.EventSettings.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Settings.EventSettings.Builder {
         let resultDecodedBuilder = Pogoprotos.Settings.EventSettings.Builder()
         if let jsonValueCondolenceRibbonCountry = jsonMap["condolenceRibbonCountry"] as? Array<String> {
           resultDecodedBuilder.condolenceRibbonCountry = jsonValueCondolenceRibbonCountry
@@ -858,7 +858,7 @@ public extension Pogoprotos.Settings {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Settings.FestivalSettings.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Settings.FestivalSettings.Builder {
         let resultDecodedBuilder = Pogoprotos.Settings.FestivalSettings.Builder()
         if let jsonValueFestivalType = jsonMap["festivalType"] as? String {
           resultDecodedBuilder.festivalType = try Pogoprotos.Settings.FestivalSettings.FestivalType.fromString(str: jsonValueFestivalType)
@@ -1297,7 +1297,7 @@ public extension Pogoprotos.Settings {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Settings.FortSettings.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Settings.FortSettings.Builder {
         let resultDecodedBuilder = Pogoprotos.Settings.FortSettings.Builder()
         if let jsonValueInteractionRangeMeters = jsonMap["interactionRangeMeters"] as? NSNumber {
           resultDecodedBuilder.interactionRangeMeters = jsonValueInteractionRangeMeters.doubleValue
@@ -2253,7 +2253,7 @@ public extension Pogoprotos.Settings {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Settings.GlobalSettings.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Settings.GlobalSettings.Builder {
         let resultDecodedBuilder = Pogoprotos.Settings.GlobalSettings.Builder()
         if let jsonValueFortSettings = jsonMap["fortSettings"] as? Dictionary<String,Any> {
           resultDecodedBuilder.fortSettings = try Pogoprotos.Settings.FortSettings.Builder.decodeToBuilder(jsonMap:jsonValueFortSettings).build()
@@ -2627,7 +2627,7 @@ public extension Pogoprotos.Settings {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Settings.GpsSettings.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Settings.GpsSettings.Builder {
         let resultDecodedBuilder = Pogoprotos.Settings.GpsSettings.Builder()
         if let jsonValueDrivingWarningSpeedMetersPerSecond = jsonMap["drivingWarningSpeedMetersPerSecond"] as? NSNumber {
           resultDecodedBuilder.drivingWarningSpeedMetersPerSecond = jsonValueDrivingWarningSpeedMetersPerSecond.floatValue
@@ -3022,7 +3022,7 @@ public extension Pogoprotos.Settings {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Settings.InventorySettings.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Settings.InventorySettings.Builder {
         let resultDecodedBuilder = Pogoprotos.Settings.InventorySettings.Builder()
         if let jsonValueMaxPokemon = jsonMap["maxPokemon"] as? NSNumber {
           resultDecodedBuilder.maxPokemon = jsonValueMaxPokemon.int32Value
@@ -3279,7 +3279,7 @@ public extension Pogoprotos.Settings {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Settings.LevelSettings.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Settings.LevelSettings.Builder {
         let resultDecodedBuilder = Pogoprotos.Settings.LevelSettings.Builder()
         if let jsonValueTrainerCpModifier = jsonMap["trainerCpModifier"] as? NSNumber {
           resultDecodedBuilder.trainerCpModifier = jsonValueTrainerCpModifier.doubleValue
@@ -3762,7 +3762,7 @@ public extension Pogoprotos.Settings {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Settings.MapSettings.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Settings.MapSettings.Builder {
         let resultDecodedBuilder = Pogoprotos.Settings.MapSettings.Builder()
         if let jsonValuePokemonVisibleRange = jsonMap["pokemonVisibleRange"] as? NSNumber {
           resultDecodedBuilder.pokemonVisibleRange = jsonValuePokemonVisibleRange.doubleValue
@@ -3978,7 +3978,7 @@ public extension Pogoprotos.Settings {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Settings.SfidaSettings.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Settings.SfidaSettings.Builder {
         let resultDecodedBuilder = Pogoprotos.Settings.SfidaSettings.Builder()
         if let jsonValueLowBatteryThreshold = jsonMap["lowBatteryThreshold"] as? NSNumber {
           resultDecodedBuilder.lowBatteryThreshold = jsonValueLowBatteryThreshold.floatValue

@@ -235,7 +235,7 @@ public extension Pogoprotos.Networking.Platform.Requests {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Platform.Requests.BuyItemAndroidRequest.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Platform.Requests.BuyItemAndroidRequest.Builder {
         let resultDecodedBuilder = Pogoprotos.Networking.Platform.Requests.BuyItemAndroidRequest.Builder()
         if let jsonValueBuyItemIntent = jsonMap["buyItemIntent"] as? String {
           resultDecodedBuilder.buyItemIntent = jsonValueBuyItemIntent
@@ -433,7 +433,7 @@ public extension Pogoprotos.Networking.Platform.Requests {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Platform.Requests.BuyItemPokeCoinsRequest.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Platform.Requests.BuyItemPokeCoinsRequest.Builder {
         let resultDecodedBuilder = Pogoprotos.Networking.Platform.Requests.BuyItemPokeCoinsRequest.Builder()
         if let jsonValueItemId = jsonMap["itemId"] as? String {
           resultDecodedBuilder.itemId = jsonValueItemId
@@ -631,7 +631,7 @@ public extension Pogoprotos.Networking.Platform.Requests {
           }
         }
       }
-      class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Platform.Requests.SendEncryptedSignatureRequest.Builder {
+      override class public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> Pogoprotos.Networking.Platform.Requests.SendEncryptedSignatureRequest.Builder {
         let resultDecodedBuilder = Pogoprotos.Networking.Platform.Requests.SendEncryptedSignatureRequest.Builder()
         if let jsonValueEncryptedSignature = jsonMap["encryptedSignature"] as? String {
           resultDecodedBuilder.encryptedSignature = Data(base64Encoded:jsonValueEncryptedSignature, options: Data.Base64DecodingOptions(rawValue:0))!
